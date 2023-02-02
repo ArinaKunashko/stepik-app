@@ -11,7 +11,8 @@
         <div v-else-if="step.type === 'audio'">
             {{ currentAudioName || audioList[0].name }}
             <audio-player class="audio" :src=step.content ref="audioPlayer" :before-play="handleBeforePlay"
-                :audio-list="audioList.map(elm => elm.url)" theme-color="##293133" :show-prev-button="false" :show-next-button="false" :show-playback-rate="false">
+                :audio-list="audioList.map(elm => elm.url)" theme-color="##293133" :show-prev-button="false"
+                :show-next-button="false" :show-playback-rate="false">
                 <source :src="step.content" type="audio/mp3" />
             </audio-player>
         </div>
@@ -30,12 +31,13 @@
                 <textarea v-model="assumption" />
             </div>
             <button class="button is-link" :disabled="step.success" @click="checkAnswer"> Check </button>
-            <div  v-if="step.success"> 
+            <div v-if="step.success">
                 <span class="icon is-small">
-            <i class="mdi mdi-18px mdi-check" style="color:green" ></i>
-          </span>
-                 
-            {{ step.answer }} is correct answer! Great! </div>
+                    <i class="mdi mdi-18px mdi-check" style="color:green"></i>
+                </span>
+
+                {{ step.answer }} is correct answer! Great!
+            </div>
             <div v-if="step.success === false"> Error </div>
         </div>
 
@@ -126,18 +128,20 @@ export default {
     color: gray;
     top: 0;
 }
+
 .video-fixed {
     max-width: 700px;
     margin: auto;
 }
+
 textarea {
     width: 100%;
     font-size: 110%;
 }
+
 .block {
     text-align: center;
     font-weight: 500;
     font-size: 130%;
 }
-
 </style>

@@ -81,14 +81,6 @@ const store = createStore({
 Писать декларативный код, в целом, лучший выбор. Ваш код будет легче читать, понимать, и делать что-то новое опираясь на него. Но иногда у вас нет выбора.
 От изменения состояния* появляется гора багов, а инструкции (операторы) присванивания (assignment statements), которые создают изменения, часто являются коренными причинами всего зла во вселенной.
 Поэтому, когда дело доходит до инструкций присваивания, действуйте осторожно.
-
-# h1 Heading 8-)
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
-**How are you**`
              
             },
             {
@@ -143,8 +135,6 @@ const store = createStore({
         countSuccessQuestions(state) {
           return state.steps.filter(s => s.type === 'question' && s.success === true).length
         },
-        
-
       },
 
     mutations: {
