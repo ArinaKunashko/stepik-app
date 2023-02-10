@@ -7,8 +7,6 @@ import 'video.js/dist/video-js.css'
 import AudioPlayer from '@liripeng/vue-audio-player'
 import VueMathjax from 'vue-mathjax-next';
 
-
-
 createApp(App)
 .use(router)
 .use(store)

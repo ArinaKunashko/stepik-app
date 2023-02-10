@@ -1,6 +1,6 @@
-import {createRouter, createWebHistory} from "vue-router";
-import StepPage from "@/pages/StepPage"
-import MainPage from "@/pages/MainPage"
+import {createRouter, createWebHistory} from 'vue-router';
+import StepPage from '@/pages/StepPage'
+import MainPage from '@/pages/MainPage'
 
 const routes = [
     {
@@ -11,7 +11,6 @@ const routes = [
         path: '/step/:id',
         component: StepPage
     },
-   
 ]
 
 const router = createRouter({

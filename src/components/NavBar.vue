@@ -1,10 +1,10 @@
 <template>
   <div>
     <div>
-      <nav class="navbar is-black" role="navigation" aria-label="pagination">
-        <a :key="step.id" v-for="step in allSteps" class="pagination-link"
-          :class="{ 'current': step.id == $route.params.id, 'success': step.success }" @click="changePage(step.id)">
-          <span class="icon is-small">
+      <nav class='navbar is-black' role='navigation' aria-label='pagination'>
+        <a :key='step.id' v-for='step in allSteps' class='pagination-link'
+          :class="{ 'current': step.id == $route.params.id, 'success': step.success }" @click='changePage(step.id)'>
+          <span class='icon is-small'>
             <i :class="{
               'mdi mdi-18px mdi-help': step.type === 'question',
               'mdi mdi-24px mdi-play': step.type === 'video',
@@ -14,14 +14,14 @@
         </a>
       </nav>
     </div>
-    <nav class="level">
-      <p class="level-item has-text-centered">
+    <nav class='level'>
+      <p class='level-item has-text-centered'>
         Topic of lesson
       </p>
-      <p class="level-item has-text-centered">
+      <p class='level-item has-text-centered'>
         {{ countSuccessSteps }} out of {{ allSteps.length }} steps completed
       </p>
-      <p class="level-item has-text-centered">
+      <p class='level-item has-text-centered'>
         {{ countSuccessQuestions }} out of {{ questionCount }} points received
       </p>
     </nav>
@@ -36,13 +36,7 @@ export default {
     return {
       page: 1,
       totalPages: 10,
-
     }
-  },
-  components: {
-  },
-  props: {
-
   },
   methods: {
     changePage(pageNumber) {

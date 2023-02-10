@@ -1,15 +1,15 @@
 <template>
-  <div class="step">
+  <div class='step'>
     <NavBar />
-    <div class="block">
-      <StepContent :step="step"> </StepContent>
+    <div class='block'>
+      <StepContent :step='step'> </StepContent>
     </div>
-    <nav class="level">
-      <p class="level-item has-text-centered">
+    <nav class='level'>
+      <p class='level-item has-text-centered'>
         Step {{ step.id }} 
       </p>
-      <p class="level-item has-text-centered">
-        <button class="button is-success" @click="$router.push(stepId < countSteps ? `/step/${stepId + 1}` : '/')">
+      <p class='level-item has-text-centered'>
+        <button class='button is-success' @click="$router.push(stepId < countSteps ? `/step/${stepId + 1}` : '/')">
           Next step
         </button>
       </p>

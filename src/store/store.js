@@ -146,7 +146,6 @@ const store = createStore({
       },
     },
 
-
     actions: {
       setSuccess({ commit }, id) {
         commit('SET_SUCCESS', id)

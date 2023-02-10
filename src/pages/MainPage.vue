@@ -1,68 +1,59 @@
 <template>
-  <div class="content">
-    <h1>Здравствуйте, команда Заботай!</h1>
-    <p> Меня зовут Арина, рада представить вам проект, разработанный как тестовое задание для отбора в вашу команду.
-      Ниже будут
-      описаны функциональные возможности по приложению-уроку как на Stepik и технологический стек, использованный при
-      разработке приложения. </p>
-    <h2> Функциональность </h2>
+  <div class='content'>
+    <h2> Functionality </h2>
     <ul>
       <li>
-        Начать 'урок' можно нажав на кнопку 'Start studying';
+        You can start the 'lesson' by clicking on the 'Start studying' button;;
       </li>
       <li>
-        На верхней панели отображаются шаги с обозначением типа контента;
+        The upper panel displays the steps with the designation of the content type;
       </li>
       <li>
-        Ниже размещены слева направо: тема занятия, сколько шагов пройдено, сколько задач решено;
+        Below are placed from left to right: the topic of the lesson, how many steps have been completed, how many tasks have been solved;
       </li>
       <li>
-        На панели со списком шагов шаг с контентом видео, аудио и текста автоматически считаются пройденными, шаги с
-        вопросами считаются пройденными только при условии успешного прохождения задания;
+        On the panel with the list of steps, a step with video, audio and text content is automatically considered completed, steps with questions are considered completed only if the task is successfully completed;
       </li>
       <li>
-        Находясь внутри шага, возможно перейти либо на следующий шаг, либо на любой шаг из списка;
+        Being inside a step, it is possible to go either to the next step, or to any step from the list;
       </li>
       <li>
-        На первом шаге предлагаю посмотреть видео;
+        At the first step, I suggest you watch the video;
       </li>
       <li>
-        На втором шаге предлагаю послушать интересный подкаст про изменения в мире Frontend;
+        At the second step, I suggest listening to an interesting podcast about changes in the Frontend world;
       </li>
       <li>
-        На третьем шаге предлагаю ознакомиться с материалом про декларативное и императивное программирование;
+        At the third step, I suggest you familiarize yourself with the material about declarative and imperative programming;
       </li>
       <li>
-        На шагах 4-7 предлагаю попробовать себя в задачках для развития математического и логического мышления, ответ
-        вводится в поле для ответов, правильное решение отображается измением цвета шага на зеленый и надписью об
-        успехе;
+        In steps 4-7, I suggest trying yourself in problems for the development of mathematical and logical thinking, the answer is entered in the field for answers, the correct solution is displayed by changing the color of the step to green and the inscription about success;
       </li>
 
     </ul>
-    <h2>Технологический стек</h2>
+    <h2>Technology stack</h2>
     <ul>
       <li>
-        Проект написан на JavaScript + Vue3 + VueX + Bulma;
+        The project is written in JavaScript + Vue3 + VueX + Bulma;
       </li>
       <li>
-        Описала компоненты с использованием hooks (created, mounted);
+        Described components using hooks (created, mounted);
       </li>
       <li>
-        Задействовала библиотеку VueX для создания Store;
+        I used the VueX library to create a Store;
       </li>
       <li>
-        Использовала Vue Router для маршрутизации;
+        Used Vue Router for routing;
       </li>
       <li>
-        Применила библиотеку Vue VideoPlayer для отображения видео-контента и библиотеку Vue AudioPlayer для
-        воспроизведения аудио-контента;
+        I used the Vue VideoPlayer library to display video content and the Vue AudioPlayer library to play audio content;
       </li>
       <li>
-        Для отображения математичсеких формул воспользовалась библиотекой Vue VueMathjax;
+        To display mathematical formulas , I used the Vue VueMathjax library;
       </li>
     </ul>
-    <button class="button is-info">
-      <router-link to="/step/1"> Start studying </router-link>
+    <button class='button is-info'>
+      <router-link to='/step/1'> Start studying </router-link>
     </button>
   </div>
 </template>
@@ -70,11 +61,7 @@
 <script>
 
 export default {
-
-  name: 'MainPage',
-  components: {
-
-  }
+  name: 'MainPage'
 }
 </script>
 
