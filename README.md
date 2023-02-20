@@ -1,6 +1,6 @@
 # Stepik application with Vue3 +VueX + Bulma 
 
-## Live App stepik-zabotay.web.app
+## Live App  https://stepik-zabotay.web.app
 
 ## Features 
 
